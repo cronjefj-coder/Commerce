@@ -40,7 +40,7 @@ If you want access to the Django administration section of the application, you 
 
 To run the application use the command ```python manage.py runserver```. This will start the local server http://127.0.0.1:8000/. You can open your preferred browser and navigate to the server url. NOTE to access Django admin, add 'admin/' to the back of the server url.
 
-## Application Features:
+## UPDATE THIS SECTION Application Features:
 
 When you have navigated to the server url, the application will show notes already created, if any. You will be able to create new notes, update existing notes and delete existing notes.
 
