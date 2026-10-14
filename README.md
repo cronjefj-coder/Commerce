@@ -40,9 +40,25 @@ If you want access to the Django administration section of the application, you 
 
 To run the application use the command ```python manage.py runserver```. This will start the local server http://127.0.0.1:8000/. You can open your preferred browser and navigate to the server url. NOTE to access Django admin, add 'admin/' to the back of the server url.
 
-## UPDATE THIS SECTION Application Features:
+## Application Features:
 
-When you have navigated to the server url, the application will show notes already created, if any. You will be able to create new notes, update existing notes and delete existing notes.
+When you have navigated to the server url, the application will a Welcome page that allows you to register or login. 
+
+1. **Registration**
+
+You can register as either a Vendor or a Buyer. After successful registration, you will be automatically logged in and redirected to the relevant home page depending on your choice of Vendor or Buyer. Note that if you want to register as both a Vendor and Buyer, you will have to use different usernames and register separately.
+
+3. **Forgot password**
+
+You will have the ability to reset your password once you have registered. To reset a password, simply click on the Forgot Password link in the login screen. Note that you will only have 10 minutes to reset your password. After the 10 minutes, you will have to follow the Forgot Password link again if you want to reset the password.
+
+2. **Vendors**
+
+As a Vendor, you will be able to create, edit and delete stores. Within the stores, you will be able to create, edit and delete products that can be sold. Be sure to visit your stores frequently to monitor product stock levels as this will automatically decrease as buyers purchase your products. To view or edit your stores and products, simply click on the store or product title.
+
+3. **Buyers**
+
+As a Buyer, you will be able to see all products sold from all stores. To purchase a product, simply click on the product title. You will be redirected to the product details where you can either leave a review or add the product to your cart. You can only leave one review per product. Take note that your cart is only populated while you are logged in. As soon as you have logged out, the items not purchased will disappear from your cart. Once you have checked out, you will receive an invoice via email.
 
 ## After app usage:
 
