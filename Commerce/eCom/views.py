@@ -50,12 +50,18 @@ def register_user(request):
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
+        c_password = request.POST.get('conf_password')
         email = request.POST.get('email')
         role_id = request.POST.get('role_choice')
 
         # Check to confirm all fiels are completed
-        if not username or not password or not email or not role_id:
+        if not username or not password or not email or not role_id or not c_password:
             messages.error(request, 'Please complete all fields.')
+            return redirect('register')
+
+        # Check if passwords match
+        if password != c_password:
+            messages.error(request, 'Passwords do not match.')
             return redirect('register')
 
         # Check if username already exists.
